@@ -16,7 +16,7 @@ html, body {
     background-image: url(/images/bridge.jpg);
     background-size: cover;
 
-    font: 20px/1.45 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font: 20px/1.45 'Gill Sans MT', 'Gill Sans', sans-serif;
 }
 
 #container {
