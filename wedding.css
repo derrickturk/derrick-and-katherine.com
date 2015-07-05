@@ -15,6 +15,7 @@ html, body {
 
     background-image: url(/images/bridge.jpg);
     background-size: cover;
+    background-attachment: fixed;
 
     font: 20px/1.45 'Gill Sans MT', 'Gill Sans', sans-serif;
 }
@@ -28,9 +29,17 @@ html, body {
     overflow: auto;
 }
 
+#container img {
+    border-radius: 25px;
+}
+
+#container p {
+    text-align: justify;
+}
+
 p {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 h1, h2 {
@@ -89,6 +98,12 @@ h1, h2 {
     text-align: center;
     padding: 5px 1em;
     margin: 0;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#linkbar a:hover {
+    color: grey;
 }
 
 #signature {
@@ -109,6 +124,7 @@ div.leftcolumn {
     width: calc(50% - 2em);
     background-color: #ffcb99;
     font-size: 14pt;
+    border-radius: 25px;
 }
 
 div.rightcolumn {
@@ -119,6 +135,7 @@ div.rightcolumn {
     width: calc(50% - 2em);
     background-color: #ffcb99;
     font-size: 14pt;
+    border-radius: 25px;
 }
 
 div.break {
@@ -127,10 +144,43 @@ div.break {
     clear: both;
 }
 
-#map {
+.map {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+#registry {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#registry li a {
+    display: block;
+    width: 500px;
+
+    margin: 0 auto;
+    padding: 25px;
+
+    background-color: #fee38c;
+
+    color: inherit;
+    text-decoration: inherit;
+
+    border-radius: 25px;
+}
+
+#registry li + li {
+    margin-top: 25px;
+}
+
+#registry a {
+}
+
+#registry li a:hover {
+    background-color: grey;
 }
 
 @media (max-width: 1000px) {
